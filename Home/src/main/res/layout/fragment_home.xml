@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -9,16 +10,25 @@
     </data>
 
     <FrameLayout
-
         android:layout_width="match_parent"
+        android:padding="@dimen/_16dp"
+        android:backgroundTint="@color/grey_d9d9d9"
         android:layout_height="match_parent"
         tools:context=".ui.fragment.SplashFragment">
 
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/app_name"
-       />
+        <ProgressBar
+            android:id="@+id/memeProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/black"
+          />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/memeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_meme"/>
 
     </FrameLayout>
 </layout>

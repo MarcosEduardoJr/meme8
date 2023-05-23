@@ -21,3 +21,10 @@ include(':app',
         ':Splash'
 )
 include ':Home'
+include ':Repository'
+include ':Service'
+include ':Model'
+include ':Dataset'
+include ':Usecase'
+include ':Domain'
+include ':Util'

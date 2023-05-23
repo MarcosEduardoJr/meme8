@@ -62,4 +62,10 @@ dependencies {
     //Moshi (JSON mapping)
     implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+
+    implementation project(':Model')
+    implementation project(':Repository')
+    implementation project(':Domain')
+    implementation project(':Dataset')
+    implementation project(':Service')
 }
