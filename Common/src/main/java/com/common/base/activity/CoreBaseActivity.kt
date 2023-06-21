@@ -19,7 +19,6 @@ abstract class CoreBaseActivity : AppCompatActivity(), CoroutineScope {
     override fun onCreate(savedInstanceState: Bundle?) {
         injectFeature()
         super.onCreate(savedInstanceState)
-
         initialize(savedInstanceState)
     }
 

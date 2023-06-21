@@ -12,15 +12,16 @@ buildscript {
             compiler_version = '7.0.3'
         }
         classpath "com.android.tools.build:gradle:$compiler_version"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
 plugins {
     id 'com.android.application' version '7.2.2' apply false
     id 'com.android.library' version '7.2.2' apply false
-    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
     id 'com.android.dynamic-feature' version '7.2.2' apply false
 }
 
@@ -33,3 +34,5 @@ ext {
     nav_version = "2.3.5"
     compiler_version = '7.0.3'
 }
+
+apply plugin: 'com.google.gms.google-services'

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="data"
             type="String" />
@@ -11,24 +12,73 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:padding="@dimen/_16dp"
-        android:backgroundTint="@color/grey_d9d9d9"
         android:layout_height="match_parent"
+        android:background="@color/black"
         tools:context=".ui.fragment.SplashFragment">
 
-        <ProgressBar
-            android:id="@+id/memeProgress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:indeterminateTint="@color/black"
-          />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/memeList"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/item_meme"/>
+            android:layout_height="match_parent">
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/memeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/item_meme" />
+
+            <ProgressBar
+                android:id="@+id/memeProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_32dp"
+                android:gravity="end|center"
+                app:layout_constraintTop_toTopOf="@id/next"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/next"
+                app:layout_constraintEnd_toStartOf="@id/next"
+                android:orientation="horizontal">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/share"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/share_content_description"
+                android:scaleType="center"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/next"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/next"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:borderWidth="@dimen/_0dp"
+                app:shapeAppearanceOverlay="@style/fab_square"
+                app:fabCustomSize="48dp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/orange_FF6421"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/ic_arrow_left"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 </layout>

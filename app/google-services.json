@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "946965644339",
+    "project_id": "meme8-23998",
+    "storage_bucket": "meme8-23998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946965644339:android:4edb6878796508e9140f46",
+        "android_client_info": {
+          "package_name": "com.meme8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946965644339-6ra5dl34f455dv5t39lreli3rm6red4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meme8",
+            "certificate_hash": "dae312fd6d26aaf4963e6c6af12d611183ac71f3"
+          }
+        },
+        {
+          "client_id": "946965644339-rt171r0seal6mgofispnknrvp0q9dbe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKld-kF6D48o0gksitPWC1BTHvpEr8zg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946965644339-rt171r0seal6mgofispnknrvp0q9dbe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,12 @@
 package com.splash.ui.fragment
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.common.base.fragment.BaseViewModelFragment
+import com.google.firebase.FirebaseApp
 import com.home.ui.activity.HomeActivity
 import com.splash.BR
 import com.splash.R
@@ -20,13 +25,10 @@ class SplashFragment : BaseViewModelFragment<FragmentSplashBinding, SplashViewMo
     override fun initialize() {
         super.initialize()
 
+        //FirebaseApp.initializeApp(requireContext())
         Timer().schedule(3000){
             startActivity(Intent(requireContext(),HomeActivity::class.java))
    //      navigateTo()
         }
-
     }
-
-
-
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="MyShapeAppearanceOverlay" parent="">
+        <item name="android:background">@drawable/my_shape_drawable</item>
+    </style>
+
+</resources>

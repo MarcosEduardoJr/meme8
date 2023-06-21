@@ -1,0 +1,30 @@
+package com.model.nine_gag
+
+data class Post(
+    val annotationTags: List<String>,
+    val awardState: Int,
+    val awardUsers: List<AwardUser>,
+    val awardUsersCount: Int,
+    val comment: Comment,
+    val commentsCount: Int,
+    val creationTs: Int,
+    val creator: Creator,
+    val description: String,
+    val downVoteCount: Int,
+    val hasLongPostCover: Int,
+    val id: String,
+    val images: Images,
+    val interests: List<String>,
+    val isAnonymous: Boolean,
+    val isVoteMasked: Int,
+    val nsfw: Int,
+    val postSection: PostSection,
+    val promoted: Int,
+    val sourceDomain: String,
+    val sourceUrl: String,
+    val tags: List<TagX>,
+    val title: String,
+    val type: String,
+    val upVoteCount: Int,
+    val url: String
+)

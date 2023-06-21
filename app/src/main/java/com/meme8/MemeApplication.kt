@@ -1,4 +1,4 @@
-package com.example.meme8
+package com.meme8
 
 import android.app.Application
 import com.di.memeModules

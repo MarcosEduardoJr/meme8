@@ -1,4 +1,7 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_descrition">Hi, look at this meme in 8MEME app, it\'s very funny! %1$s</string>
+    <string name="share_content_description">Button to share the meme</string>
+
 </resources>

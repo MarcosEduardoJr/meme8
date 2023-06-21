@@ -2,16 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.splash">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GRANT_READ_URI_PERMISSION" />
+
 
     <dist:module
         dist:instant="false"
-        dist:title="@string/title_splash">
+        dist:title="Splash">
         <dist:delivery>
-            <dist:on-demand />
+            <dist:install-time />
         </dist:delivery>
 
         <dist:fusing dist:include="true" />
     </dist:module>
+
 
     <application>
         <activity
